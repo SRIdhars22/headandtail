@@ -57,6 +57,30 @@ export default function Services() {
       details: null,
       color: 'border-zinc-200/60 hover:border-indigo-600/40 hover:shadow-[0_10px_30px_rgba(79,70,229,0.08)]',
     },
+    {
+      icon: (
+        <svg className="w-8 h-8 text-rose-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 14.7255 3.09032 17.1962 4.85857 19C5.3581 19.508 5.43735 20.3015 5.09341 20.9161C4.78918 21.4598 4.13788 21.7371 3.52427 21.5724C3.02987 21.4397 2.5 21 2.5 21" />
+          <circle cx="7.5" cy="10.5" r="1.5" fill="currentColor" />
+          <circle cx="11.5" cy="7.5" r="1.5" fill="currentColor" />
+          <circle cx="16.5" cy="9.5" r="1.5" fill="currentColor" />
+          <circle cx="15.5" cy="14.5" r="1.5" fill="currentColor" />
+        </svg>
+      ),
+      title: 'Poster & Creative Design',
+      desc: 'We create eye-catching, high-quality posters and marketing creatives that capture attention and communicate your message effectively across digital and print platforms.',
+      details: [
+        {
+          label: 'Marketing Posters:',
+          text: 'Perfect for promotions, events, ads, and social media campaigns with visually engaging layouts and strong branding.',
+        },
+        {
+          label: 'Creative Designs:',
+          text: 'Custom designs including banners, flyers, social media posts, and branding materials tailored to your business needs.',
+        },
+      ],
+      color: 'border-zinc-200/60 hover:border-rose-500/40 hover:shadow-[0_10px_30px_rgba(244,63,94,0.08)]',
+    },
   ];
 
   return (
@@ -79,7 +103,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`rounded-2xl border bg-white p-8 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between shadow-sm ${service.color}`}
+              className={`rounded-2xl border bg-white p-8 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between shadow-sm ${service.color} ${index === services.length - 1 && services.length % 2 !== 0 ? 'md:col-span-2' : ''}`}
             >
               <div>
                 <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-zinc-50 border border-zinc-100 shadow-inner">

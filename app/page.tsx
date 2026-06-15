@@ -8,6 +8,7 @@ import About from '@/components/About';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import Footer from '@/components/Footer';
 import BookingModals from '@/components/BookingModals';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 export default function Home() {
   const [modalType, setModalType] = useState<'consultation' | 'demo' | null>(null);
@@ -46,6 +47,9 @@ export default function Home() {
         type={modalType}
         onClose={closeModal}
       />
+
+      {/* Floating WhatsApp Chat Button */}
+      <WhatsAppButton />
     </div>
   );
 }

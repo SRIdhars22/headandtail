@@ -42,8 +42,8 @@ export default function Footer({ onOpenDemo }: FooterProps) {
                 </div>
                 <div>
                   <span className="block text-2xs uppercase tracking-wider text-zinc-500 font-semibold">Phone / WhatsApp</span>
-                  <a href="https://wa.me/15552345678" target="_blank" rel="noopener noreferrer" className="hover:text-accent-teal transition-colors font-medium">
-                    +1 (555) 234-5678
+                  <a href="https://wa.me/919080525007" target="_blank" rel="noopener noreferrer" className="hover:text-accent-teal transition-colors font-medium">
+                    +91 90805 25007
                   </a>
                 </div>
               </li>
@@ -56,24 +56,13 @@ export default function Footer({ onOpenDemo }: FooterProps) {
                 </div>
                 <div>
                   <span className="block text-2xs uppercase tracking-wider text-zinc-500 font-semibold">Email Support</span>
-                  <a href="mailto:contact@headandtailtech.com" className="hover:text-accent-purple transition-colors font-medium">
-                    contact@headandtailtech.com
+                  <a href="mailto:headsandtailsorg@gmail.com" className="hover:text-accent-purple transition-colors font-medium">
+                    headsandtailsorg@gmail.com
                   </a>
                 </div>
               </li>
 
-              <li className="flex items-center gap-4 text-zinc-600 hover:text-zinc-900 transition-colors text-sm">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white border border-zinc-200 shrink-0">
-                  <svg className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                </div>
-                <div>
-                  <span className="block text-2xs uppercase tracking-wider text-zinc-500 font-semibold">Headquarters</span>
-                  <span className="font-medium">San Francisco, CA / London, UK</span>
-                </div>
-              </li>
+
             </ul>
           </div>
         </div>
